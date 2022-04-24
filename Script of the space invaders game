@@ -1,0 +1,19 @@
+var space = createSprite(200,200);
+space.setAnimation("space");
+space.scale = 1;
+var Player = createSprite(200, 200);
+Player.setAnimation("Player");
+// in the player scale you can scale it tou whatever you want the best player scale for me is 0.3 and 0.4
+Player.scale = 0.4;
+// lets make a player movement code
+function draw() {
+   drawSprites();
+   if(KeyDown("a")) {
+    Player.x = Player.x -5;
+   }
+   if(KeyDown("d")) {
+   Player.x = Player.x = +5;
+   }
+}
+
+// this script is in code.org
